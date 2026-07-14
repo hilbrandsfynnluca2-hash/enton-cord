@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enton-Cord | Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0c10;
+            color: #f0f3f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        header h1 {
+            color: #f1c40f;
+            font-size: 2.8rem;
+            margin: 0;
+            text-shadow: 0 0 10px rgba(241, 196, 15, 0.3);
+        }
+        header p {
+            color: #8b949e;
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            backdrop-filter: blur(8px);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #58a6ff;
+            border-bottom: 1px solid rgba(88, 166, 255, 0.2);
+            padding-bottom: 8px;
+        }
+        
+        /* Social Media Buttons */
+        .socials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .social-btn:hover {
+            transform: translateY(-2px);
+        }
+        .youtube { background-color: #ff0000; box-shadow: 0 0 15px rgba(255,0,0,0.2); }
+        .tiktok { background-color: #010101; border: 1px solid #ff0050; box-shadow: 0 0 15px rgba(255,0,80,0.15); }
+        .twitch { background-color: #9146ff; box-shadow: 0 0 15px rgba(145,70,255,0.2); }
+        
+        /* Regeln */
+        .rules-info {
+            background: rgba(241, 196, 15, 0.05);
+            border-left: 4px solid #f1c40f;
+            padding: 12px 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .rule-box {
+            background: rgba(255, 255, 255, 0.015);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .rule-title {
+            color: #ff7b72;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .rule-text {
+            color: #c9d1d9;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .rules-outro {
+            text-align: center;
+            font-style: italic;
+            color: #8b949e;
+            margin-top: 20px;
+        }
+
+        /* Partner Instant Gaming */
+        .partner-ig {
+            background: linear-gradient(135deg, rgba(255, 136, 0, 0.05) 0%, rgba(255, 68, 0, 0.1) 100%);
+            border: 1px solid #ff8800;
+            border-radius: 12px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        .partner-ig h3 {
+            color: #ff8800;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+        .partner-ig p {
+            line-height: 1.6;
+            color: #e6edf3;
+        }
+        .partner-ig ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        .ig-btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .ig-link {
+            background-color: #ff8800;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.2s;
+            display: inline-block;
+        }
+        .ig-link:hover {
+            background-color: #e07700;
+            transform: translateY(-2px);
+        }
+        .dc-link {
+            background-color: #5865F2;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.2s;
+            display: inline-block;
+        }
+        .dc-link:hover {
+            background-color: #4752C4;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦆 Enton-Cord</h1>
+            <p>Die offizielle Community-Webseite</p>
+        </header>
+
+        <!-- Social Media Section -->
+        <div class="section">
+            <h2>📱 Social Media</h2>
+            <div class="socials-grid">
+                <a href="https://youtube.com/@entongerman?si=Lxc6IoCKn-hbpNk9" target="_blank" class="social-btn youtube">📺 YouTube</a>
+                <a href="https://www.tiktok.com/@entongerman?_r=1&_t=ZG-982Mqgup9Dl" target="_blank" class="social-btn tiktok">📱 TikTok</a>
+                <a href="https://twitch.tv/enton20102104" target="_blank" class="social-btn twitch">🎮 Twitch</a>
+            </div>
+        </div>
+
+        <!-- Regeln Section -->
+        <div class="section">
+            <h2>📜 Serverregeln</h2>
+            <div class="rules-info">
+                <strong>Gültig für:</strong> Alle die den Server betreten und sich die Verifizierung abholen.<br>
+                <strong>Stand:</strong> 12. Juli 2026
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§1.1 Namen</div>
+                <p class="rule-text">Namen dürfen keine Beleidigung oder andere Verbotene Inhalte enthalten.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§1.2 Umgang mit dem Team und unter euch</div>
+                <p class="rule-text">Der Umgang zwischen euch oder dem Team muss freundlich gestaltet werden. Unhöfliches Verhalten oder Respektlosigkeit ist untersagt.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§1.3 Werbung</div>
+                <p class="rule-text">Das Verschicken von anderen Server-Links oder andere Werbung ist untersagt, außer es gibt eine Partnerschaft, die anerkannt wurde durch einen Admin oder Enton.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§1.4 Datenschutz</div>
+                <p class="rule-text">Das Veröffentlichen von privaten Informationen oder Bildern ist strengstens untersagt.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§1.5 Ticket System</div>
+                <p class="rule-text">Das Ticketsystem ist lediglich dafür da, um zu helfen, und für nichts anderes. Unnötig ein Ticket zu öffnen ist untersagt.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§2.1 DM Support</div>
+                <p class="rule-text">DM-Support ist untersagt, dafür gibt es das Ticket System.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§2.2 Strafe</div>
+                <p class="rule-text">Verstöße können zu Banns, Mutes oder Timeouts führen, je nach Schwere.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§2.3 NSFW und Inhalt</div>
+                <p class="rule-text">Verstörender Inhalt oder ähnliches ist strengstens untersagt.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§2.4 Kanalnutzung</div>
+                <p class="rule-text">Nutzt die vorgegebenen Kanäle – zum Beispiel Memes nur in den Meme-Kanal.</p>
+            </div>
+
+            <div class="rule-box">
+                <div class="rule-title">§2.5 Pings</div>
+                <p class="rule-text">Bei Fragen und Hilfe den Supportern oder Moderatoren Bescheid geben, aber keine High Teamler pingen.</p>
+            </div>
+
+            <p class="rules-outro">Bitte zeigt Verständnis und haltet euch an die Regeln, damit wir alle gut miteinander auskommen!</p>
+        </div>
+
+        <!-- Partner Section -->
+        <div class="section">
+            <h2>🤝 Offizieller Partner</h2>
+            <div class="partner-ig">
+                <h3>🧡 Instant Gaming</h3>
+                <p>Hey Leute! 🚀<br><br>Ich freue mich riesig, euch mitteilen zu können, dass wir ab sofort offizieller Partner von <strong>Instant Gaming</strong> sind!</p>
+                <p>Wenn ihr euch das nächste Mal ein neues Spiel, DLCs, Guthabenkarten oder Gamecards holt, könnt ihr mich und das Projekt hier ganz einfach und <strong>ohne zusätzliche Kosten</strong> unterstützen!</p>
+                
+                <h4>🛒 Wie funktioniert das?</h4>
+                <p>Klickt vor eurem Einkauf einfach auf meinen Partnerlink, sucht euch eure Spiele mit satten Rabatten aus und kauft ganz normal ein – ein kleiner Teil eures Einkaufs fließt direkt in die Unterstützung unseres Kanals/Servers!</p>
+                
+                <h4>🎁 Community-Giveaways!</h4>
+                <p>Durch die Partnerschaft bekommen wir auch Zugang zu <strong>monatlichen Community-Giveaways</strong>! Das bedeutet, dass es hier auf dem Server bald exklusive Gewinnspiele für euch geben wird, bei denen ihr Games abstauben könnt. 🎉</p>
+                <p>Vielen Dank für euren krassen Support – ohne euch wäre das nicht möglich gewesen! ❤️</p>
+                
+                <div class="ig-btn-container">
+                    <a href="https://www.instant-gaming.com/?igr=gamer-f60781e" target="_blank" class="ig-link">🔗 Zum Instant Gaming Partnerlink</a>
+                    <a href="https://discord.gg/instantgaming" target="_blank" class="dc-link">👾 Instant Gaming Discord</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
